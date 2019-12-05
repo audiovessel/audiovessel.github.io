@@ -141,6 +141,7 @@
 }
 #calculator .culc-pay .calc-r .default-btn{
     float: right;
+    cursor: pointer;
 }
 #calculator .culc-info{
     background: linear-gradient(to right bottom,#dc2430,#7b4397);

@@ -160,4 +160,31 @@
     =========================================================================*/
     new WOW().init();
 
+
+    /*=========================================================================
+        Калькулятор
+    =========================================================================*/
+    $('#calculator .culc-pay .range-month').on('change',function(){
+        $('#calculator .range-val-month').val($(this).val());
+    });
+    $('#calculator .culc-pay .range-val-month').on('change',function(){
+        $('#calculator .range-month').val($(this).val());
+    });
+
+    $('#calculator .culc-pay .calc-r buttom').on('click',function() {
+        var month = $('#calculator .culc-pay .range-month').val();
+        var subs = $('#calculator .culc-pay input[name=subs]:checked').val();
+        var pr = 0.0;
+        if(month < 2){
+            pr = 0.0;
+        }else if(month >= 2 && month <= 12){
+            pr = 2.5;
+        }else if(month > 12 && month <= 24){
+            pr = 5;
+        }else{
+            pr = 7.5;
+        }
+        var sum = (month*subs)-((subs/100)*pr);
+        $('#calculator .culc-pay .calc-r .calc-sum').text(sum);
+    });
 })(jQuery);

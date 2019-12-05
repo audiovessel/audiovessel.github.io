@@ -423,17 +423,17 @@
                 <div class="col-md-6 culc-pay">
                     <div class="col-md-12 col-lg-12">
                         <input class="range-month" type="range" min="0" max="36" value="0" step="1">
-                        <input class="range-val-month" type="number" value="0">
+                        <input class="range-val-month" type="number" value="0" min="0" max="36" step="1">
                     </div>
                     <div class="col-md-12 col-lg-12">
                         <div>
                             <h3>Выбирите тип подписки:</h3>
-                            <p><label><input type="radio" name="subs" value="1">Обычный</label></p>
-                            <p><label><input type="radio" name="subs" value="2">Вип</label></p>
-                            <p><label><input type="radio" name="subs" value="3">Премиум</label></p>
+                            <p><label><input type="radio" name="subs" value="25.0" checked>Обычный</label></p>
+                            <p><label><input type="radio" name="subs" value="60.0">Вип</label></p>
+                            <p><label><input type="radio" name="subs" value="110.0">Премиум</label></p>
                         </div>
                         <div class="calc-r">
-                            <div class="calc-itog">Итого: <span class="calc-sum">0</span></div>
+                            <div class="calc-itog">Итого: <span class="calc-sum">0.0</span></div>
                             <buttom class="default-btn">Расчитать</buttom>
                         </div>
                     </div>
