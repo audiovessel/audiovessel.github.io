@@ -291,7 +291,7 @@
                 <p>Пока нас мало, но нашему энтузиазму можно позавидовать, и да Маркетолог красавчик</p>
             </div>
             <div class="row team-wrap">
-                <div class="col-lg-3 col-sm-6 sm-padding">
+                <div class="col-lg-4 col-sm-8 sm-padding">
                     <div class="team-box text-center">
                         <div class="team-thumb">
                             <img src="img/team-1.jpg" alt="img">
@@ -308,7 +308,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 sm-padding">
+                <div class="col-lg-4 col-sm-8 sm-padding">
                     <div class="team-box text-center">
                         <div class="team-thumb">
                             <img src="img/team-2.jpg" alt="img">
@@ -318,14 +318,14 @@
                             <span>Разработчик</span>
                         </div>
                         <ul class="social-icon">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 sm-padding">
+                <div class="col-lg-4 col-sm-8 sm-padding">
                     <div class="team-box text-center">
                         <div class="team-thumb">
                             <img src="img/team-3.jpg" alt="img">
@@ -335,17 +335,17 @@
                             <span>Маркетолог</span>
                         </div>
                         <ul class="social-icon">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="testimonial" class="testimonial-section padding">
+    <section id="testimonial" class="testimonial-section padding bd-bottom">
         <div class="container">
             <div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
                 <span>Отзывы</span>
@@ -411,21 +411,54 @@
             </div>
         </div>
     </section>
-    <section id="calculator" class="calculator-section  d-flex align-items-center padding">
+    <section id="calculator" class="calculator-section  d-flex align-items-center padding bd-bottom">
         <div class="container">
-            <form class="d-flex" action="">
-                <div>
-                    <select name="" id="" style="width: 300px; height: 30px;"></select>
-                    <br><br>
-                    <textarea name="" id="" cols="30" rows="10" style="width: 300px;"></textarea>
+            <div class="row">
+                <div class="col-md-6 culc-pay">
+                    <div class="col-md-12 col-lg-12">
+                        <input class="range-month" type="range" min="0" max="36" value="0" step="1">
+                        <input class="range-val-month" type="number" value="0">
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div>
+                            <h3>Выбирите тип подписки:</h3>
+                            <p><label><input type="radio" name="subs" value="1">Обычный</label></p>
+                            <p><label><input type="radio" name="subs" value="2">Вип</label></p>
+                            <p><label><input type="radio" name="subs" value="3">Премиум</label></p>
+                        </div>
+                        <div class="calc-r">
+                            <div class="calc-itog">Итого: <span class="calc-sum">0</span></div>
+                            <buttom class="default-btn">Расчитать</buttom>
+                        </div>
+                    </div>
                 </div>
-                <input type="range">
-                <div style="margin-left: 500px; margin-top: 200px;">
-                    Итого: <span>0</span>
-                    <br><br>
-                    <a href="#" class="default-btn">Расчитать</a>
-            </form>
-            </form>
+                <div class="col-md-6 culc-info">
+                    <h3>ТИПЫ ПОДПИСКИ:</h3>
+                    <ul class="ul-t1">
+                        <li>
+                            ОБЫЧНАЯ:
+                            <ul class="ul-t2">
+                                <li>Отсутствие рекламы</li>
+                            </ul>
+                        </li>
+                        <li>
+                            ВИП:
+                            <ul class="ul-t2">
+                                <li>Отсутствие рекламы</li>
+                                <li>Возможность оффлайн прослушивать и хранить музыку на устройстве</li>
+                            </ul>
+                        </li>
+                        <li>
+                            ПРЕМИУМ:
+                            <ul class="ul-t2">
+                                <li>Отсутствие рекламы</li>
+                                <li>Доступ к платной музыки</li>
+                                <li>Возможность оффлайн прослушивать и хранить музыку на устройстве</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <div class="sponsor-section bd-bottom">
